@@ -1,0 +1,161 @@
+header 
+{
+  background:#003333; 
+  border:2px groove;
+  height:80px; 
+  left:0; 
+  position:fixed; 
+  width:100%;
+  top:0; 
+  z-index:-1;
+}
+#h1
+{
+  text-align: left;
+  margin-left:100px;
+  font-family: Arial;
+  color:white;
+}
+body 
+{
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  background-color:hsla(120,100%,25%,0.3);
+  
+}
+.container
+{
+  cursor: pointer;
+  width:150px; height:100px; 
+  border:2px groove;
+  display: inline-block;
+  vertical-align: middle;
+  line-height:50px ; 
+  text-align: center;
+  color: white;
+  background:#003333; 
+  margin-top:100px;
+    
+}
+
+.containerGrains
+{
+    cursor: pointer;
+    width:304px; height:100px; 
+    border:2px groove;
+    display: table-cell;
+    vertical-align: middle;
+    line-height:50px ; 
+    text-align: center;
+    color: white;
+    background:#003333; 
+}
+.submenu
+{
+    cursor: pointer;
+    width:80px; height:80px; 
+    border:2px groove;
+    margin-left:5px;
+    margin-right:2px;
+    margin-top:10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height:50px ; 
+    text-align: center;
+    color: white;
+    background-color:#003333;
+    position: float;
+}
+.submenuHover
+{
+    cursor: pointer;
+    width:80px; height:80px; 
+    border:4px groove;
+    margin-left:5px;
+    margin-right:2px;
+    margin-top:10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height:50px ; 
+    text-align: center;
+    color: white;
+    background-color:#003333;
+    position: float;
+}
+#sweets-close 
+{
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.typefood
+{
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    color:white;  
+}
+
+
+#sweets
+{
+     background-image: url(http://www.strangehistory.net/blog/wp-content/uploads/2013/11/sweets.jpg);
+}
+#fats
+{
+    background-image: url(http://ec.l.thumbs.canstockphoto.com/canstock7916297.jpg); 
+}
+
+#dairy
+{
+    background-image: url(http://www.gilanholding.com/draft/images/menu-image-gilan-dairy.jpg);
+}
+#meat
+{
+    background-image: url(http://www.pongolacold.co.za/images/products/1135.jpg);
+}
+#vegetables
+{
+    background-image: url(http://www.healingwithfoods.org/sites/default/files/content_images/root_vegetables_2_1_150x100.jpg);
+}
+#fruits
+{
+    background-image: url(http://www.foodmanufacture.co.uk/var/plain_site/storage/images/publications/food-beverage-nutrition/foodmanufacture.co.uk/business-news/inflation-kept-low-as-food-price-rises-slow/8693836-1-eng-GB/Inflation-kept-low-as-food-price-rises-slow_dnm_headline.jpg);
+}
+#grains
+{
+    background-image: url(http://media.worldbulletin.net/thumbnail.php?image=250x190/2011/08/24/diet_1.jpg&width=300&height=100);
+}
+#fridgeSweets
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  left: -300px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  margin-top: 80px;
+}
+#plate
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  right: -300px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  margin-top: 80px;
+}
+#darkChocholate
+{
+ background-image: url(http://por-img.cimcontent.net/api/assets/bin-201408/ac023999fd99f4ddfd5d20418f0e1857.jpg);
+}
+#whiteChocholate
+{
+background-image: url(http://ciggystick.com/wp-content/uploads/2014/07/whitechocolate-80x80.jpg);
+ }
+
