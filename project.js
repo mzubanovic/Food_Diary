@@ -5,6 +5,8 @@ $(document).ready(function(){
             $(this).fadeOut("fast");
             $(this).clone().appendTo("#plate"); 
             $(this).addClass("sub");
+            $("#" + food + " div.sub input").removeClass("invisible");
+            $("#" + food + " div.sub span").removeClass("invisible");
          });   
     }
 

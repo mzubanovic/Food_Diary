@@ -114,11 +114,10 @@ body
      font-family: Arial bold;
      width: 10px;
 }
-.amountMetric
+.invisible
 {
-    ;
+  display: none;
 }
-
 .close 
 {
   cursor: pointer;
