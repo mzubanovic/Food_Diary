@@ -1,6 +1,6 @@
 header 
 {
-  background:#003333; 
+  background:#003333;  
   border:2px groove;
   height:80px; 
   left:0; 
@@ -16,6 +16,14 @@ header
   font-family: Arial;
   color:white;
 }
+.h2
+{
+  text-align: left;
+  margin-left:10px;
+  font-family: Arial;
+  font-size:16px;
+  color:white;
+}
 body 
 {
   left: 0;
@@ -27,29 +35,29 @@ body
 }
 .container
 {
-	cursor: pointer;
-	width:150px; height:100px; 
-	border:2px groove;
-	display: inline-block;
-	vertical-align: middle;
-	line-height:50px ; 
-	text-align: center;
-	color: white;
-	background:#003333; 
-	margin-top:100px;
+  cursor: pointer;
+  width:150px; height:100px; 
+  border:2px groove;
+  display: inline-block;
+  vertical-align: middle;
+  line-height:50px ; 
+  text-align: center;
+  color: white;
+  background:#003333; 
+  margin-top:100px;
 }
 
 .containerGrains
 {
-	cursor: pointer;
-	width:304px; height:100px; 
-	border:2px groove;
-	display: table-cell;
-	vertical-align: middle;
-	line-height:50px ; 
-	text-align: center;
-	color: white;
-	background:#003333; 
+  cursor: pointer;
+  width:304px; height:100px; 
+  border:2px groove;
+  display: table-cell;
+  vertical-align: middle;
+  line-height:50px ; 
+  text-align: center;
+  color: white;
+  background:#003333; 
 }
 .submenu
 {
@@ -67,6 +75,22 @@ body
     background-color:#003333;
     position: float;
 }
+.sub
+{
+    cursor: pointer;
+    font-family: Arial bold; 
+    color:white;
+    text-align: center;
+
+}
+.num
+{
+    cursor: pointer;
+    font-family: Arial bold;
+    color:red;
+    
+    
+}
 .submenuHover
 {
     cursor: pointer;
@@ -83,7 +107,19 @@ body
     background-color:#003333;
     position: float;
 }
-#sweets-close 
+.inputamount
+{
+     background-color:#9C8D72;
+     color: #FAF8F5;
+     font-family: Arial bold;
+     width: 10px;
+}
+.amountMetric
+{
+    ;
+}
+
+.close 
 {
   cursor: pointer;
   padding-left: 10px;
@@ -140,7 +176,26 @@ body
   width: 300px;
   margin-top: 80px;
 }
+#fridgeFats
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  left: -300px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  margin-top: 80px; 
+}
 #plate
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  right: -300px;  /* start off behind the scenes */
+  height: 50%;
+  position: fixed;
+  width: 300px;
+  margin-top: 80px;
+  
+}
+#resoult
 {
   background-color: rgba(0, 0, 0, 0.6);
   right: -300px;  /* start off behind the scenes */
@@ -148,6 +203,7 @@ body
   position: fixed;
   width: 300px;
   margin-top: 80px;
+  
 }
 #darkChocholate
 {
@@ -157,4 +213,14 @@ body
 {
 background-image: url(http://ciggystick.com/wp-content/uploads/2014/07/whitechocolate-80x80.jpg);
  }
-
+ #butter
+{
+background-image: url(http://img2.wikia.nocookie.net/__cb20140324193454/hayday/images/f/f1/Butter.png);
+ }
+ #amount
+ {
+     background-color:9C8D72;
+     font-family: Arial bold;
+     color:FAF8F5;
+ }
+ 

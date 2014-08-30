@@ -1,20 +1,35 @@
 $(document).ready(function(){
+
+    function bindDblClick(food){
+        $("#" + food).dblclick(function(){
+            $(this).fadeOut("fast");
+            $(this).clone().appendTo("#plate"); 
+            $(this).addClass("sub");
+         });   
+    }
+
+    function animateContainer(fridge){
+        $("#" + fridge).animate({left:"0px"}, 200);
+        $('#plate').animate({right:"0px"}, 200); 
+        $('#resoult').animate({right:"0px"}, 200); 
+    } 
+
     $("#sweets").click(function(){
-        $('#fridgeSweets').animate({left:"0px"}, 200);
-        $('#plate').animate({right:"0px"}, 200);
+        animateContainer("fridgeSweets");
+        bindDblClick("whiteChocholate");
+        bindDblClick("darkChocholate");
+    }); 
+    
+//_____________________________________________
 
-        $("#darkChocholate").dblclick(function(){
-            $("#darkChocholate").fadeOut("fast");
-            $("#darkChocholate").clone().appendTo("#plate");
-        });
-
-        $("#whiteChocholate").dblclick(function(){
-            $("#whiteChocholate").fadeOut("fast");
-            $("#whiteChocholate").clone().appendTo("#plate");
-        });
+    $("#fats").click(function(){
+        animateContainer("fridgeFats");
+        bindDblClick("butter"); 
     });
 
-    $("#sweets-close").click(function() {
+//______________________________________________
+
+    $(".close").click(function() {
         $('#fridgeSweets').animate({left: "-285px"}, 200);
     });
 
@@ -28,5 +43,19 @@ $(document).ready(function(){
         }, function () {
             $("#whiteChocholate").removeClass("submenuHover");
     });
+    
+     $(".close").click(function() {
+        $('#fridgeFats').animate({left: "-285px"}, 200);
+    });
+
+    $("#butter").hover(function () {
+            $("#butter").addClass("submenuHover");
+        }, function () {
+            $("#butter").removeClass("submenuHover");
+    });
 });
+//________________________________________________________
+
+   
+
 
