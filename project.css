@@ -112,7 +112,7 @@ body
      background-color:#9C8D72;
      color: #FAF8F5;
      font-family: Arial bold;
-     width: 10px;
+     width: 40px;
 }
 .invisible
 {
@@ -169,7 +169,7 @@ body
 #fridgeSweets
 {
   background-color: rgba(0, 0, 0, 0.6);
-  left: -300px;  /* start off behind the scenes */
+  left: -300px;  
   height: 100%;
   position: fixed;
   width: 300px;
@@ -178,7 +178,7 @@ body
 #fridgeFats
 {
   background-color: rgba(0, 0, 0, 0.6);
-  left: -300px;  /* start off behind the scenes */
+  left: -300px;  
   height: 100%;
   position: fixed;
   width: 300px;
@@ -187,17 +187,17 @@ body
 #plate
 {
   background-color: rgba(0, 0, 0, 0.6);
-  right: -300px;  /* start off behind the scenes */
+  right: -300px;  
   height: 50%;
   position: fixed;
   width: 300px;
   margin-top: 80px;
   
 }
-#resoult
+#result
 {
   background-color: rgba(0, 0, 0, 0.6);
-  right: -300px;  /* start off behind the scenes */
+  right: -300px; 
   height: 100%;
   position: fixed;
   width: 300px;
@@ -218,8 +218,9 @@ background-image: url(http://img2.wikia.nocookie.net/__cb20140324193454/hayday/i
  }
  #amount
  {
-     background-color:9C8D72;
+     background-color:#9C8D72;
      font-family: Arial bold;
      color:FAF8F5;
  }
+ 
  

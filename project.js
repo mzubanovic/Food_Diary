@@ -13,7 +13,7 @@ $(document).ready(function(){
     function animateContainer(fridge){
         $("#" + fridge).animate({left:"0px"}, 200);
         $('#plate').animate({right:"0px"}, 200); 
-        $('#resoult').animate({right:"0px"}, 200); 
+        $('#result').animate({right:"0px"}, 200); 
     } 
 
     $("#sweets").click(function(){
@@ -32,7 +32,7 @@ $(document).ready(function(){
 //______________________________________________
 
     $(".close").click(function() {
-        $('#fridgeSweets').animate({left: "-285px"}, 200);
+        $('#fridgeSweets').animate({left: "-290px"}, 200);
     });
 
     $("#darkChocholate").hover(function () {
@@ -55,9 +55,30 @@ $(document).ready(function(){
         }, function () {
             $("#butter").removeClass("submenuHover");
     });
+
+//-------------- Calculator Test -------------
+    var darkChocholateNutritiveValue = {
+        proteins: 2,
+        fats: 25,
+        calories: 180,
+        sugars: 12
+        };
+
+
+    $("#submit").click(function(){
+     
+        var darkChocholateAmount = $('.submenu').val();
+        var totalDarkChocholateProteins = darkChocholateNutritiveValue.proteins * darkChocholateAmount;
+    
+        $('#totalProteinsPlate').html(totalDarkChocholateProteins);
+
+        alert(totalDarkChocholateProteins);
+    });
+
 });
 //________________________________________________________
 
-   
+
+  
 
 
