@@ -222,5 +222,14 @@ background-image: url(http://img2.wikia.nocookie.net/__cb20140324193454/hayday/i
      font-family: Arial bold;
      color:FAF8F5;
  }
- 
+ .totalValuePlate
+ {
+  
+  height: 20px;
+  width: 30px;
+  border:2px groove;
+  background-color:#9C8D72;
+  font-family: Arial bold;
+  color:FAF8F5;
+ }
  

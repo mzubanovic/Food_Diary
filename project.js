@@ -67,10 +67,11 @@ $(document).ready(function(){
 
     $("#submit").click(function(){
      
-        var darkChocholateAmount = $('.submenu').val();
+        var darkChocholateAmount = parseInt($('#DCValue').val());
         var totalDarkChocholateProteins = darkChocholateNutritiveValue.proteins * darkChocholateAmount;
     
-        $('#totalProteinsPlate').html(totalDarkChocholateProteins);
+        $("#totalProteinsPlate").html(totalDarkChocholateProteins);
+
 
         alert(totalDarkChocholateProteins);
     });
