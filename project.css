@@ -232,4 +232,7 @@ background-image: url(http://img2.wikia.nocookie.net/__cb20140324193454/hayday/i
   font-family: Arial bold;
   color:FAF8F5;
  }
- 
+ .li
+ {
+  overflow: hidden;
+ }

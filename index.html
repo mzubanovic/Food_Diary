@@ -4,6 +4,7 @@
 <head>
 	<link rel='stylesheet' href='project.css'/>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 
 </head>
 <body class="body"> 
@@ -12,8 +13,9 @@
 	</header>
 	<div id="fridgeSweets" class="menu">
 	<h2 class="h2">Fridge</h2>
-	
-	    <div id ="darkChocholate" class = "submenu">	 
+	<ul id = "sort1" class="sortable">
+	    <div id ="darkChocholate" class = "submenu" draggable="true" 
+     ondragstart="return dragStart(event)">	 
 	    	<div class="sub">
 	    		<input id="DCValue" class="inputamount invisible" type="number" name="quantity" size="4" min="1" max="500" />
 	    		<span class="invisible">g</span>
@@ -30,7 +32,7 @@
 	        <img src="http://www.portugal-tax.com/_img/icon.close.png"> 
 	      </div>
 	</div>
-	
+	</ul>
 		<div id="fridgeFats" class="menu">
 	    <h2 class="h2">Fridge</h2>
 	        
@@ -45,8 +47,19 @@
 	      </div>
 	</div>
 	
-	<div id="plate" class="menu2">
+	<div id="plate" class="menu">
     	<h2 class="h2">Plate</h2>
+    	<ul id="sort2" class="sortable">
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	<li class="li"></li>
+    	</ul>
 	</div>
 	<div id="sweets" class="container">
 	     <div class="typefood">	Sweets</div>
@@ -70,7 +83,7 @@
 	     <div class="typefood">Grains</div>
 	</div>
 	
-	<div id="result" class="menu2">
+	<div id="result" class="menu1">
 	    <h2 class="h2">Result</h2>
 	    <p><input id = "submit" type="submit" value = "Calculate" /></p>
 	    <p>Proteins <div id="totalProteinsPlate" class = "totalValuePlate" > g</p>

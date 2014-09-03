@@ -1,7 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function(){ 
 
     function bindDblClick(food){
-        $("#" + food).dblclick(function(){
+       $("#" + food).dblclick(function(){
             $(this).fadeOut("fast");
             $(this).clone().appendTo("#plate"); 
             $(this).addClass("sub");
@@ -11,16 +11,16 @@ $(document).ready(function(){
     }
 
     function animateContainer(fridge){
-        $("#" + fridge).animate({left:"0px"}, 200);
-        $('#plate').animate({right:"0px"}, 200); 
-        $('#result').animate({right:"0px"}, 200); 
+            $("#" + fridge).animate({left:"0px"}, 200);
+            $('#plate').animate({right:"0px"}, 200); 
+            $('#result').animate({right:"0px"}, 200); 
     } 
 
     $("#sweets").click(function(){
         animateContainer("fridgeSweets");
         bindDblClick("whiteChocholate");
         bindDblClick("darkChocholate");
-    }); 
+     }); 
     
 //_____________________________________________
 
@@ -55,31 +55,26 @@ $(document).ready(function(){
         }, function () {
             $("#butter").removeClass("submenuHover");
     });
-
-//-------------- Calculator Test -------------
-    var darkChocholateNutritiveValue = {
-        proteins: 2,
-        fats: 25,
-        calories: 180,
-        sugars: 12
-        };
-
-
-    $("#submit").click(function(){
-     
-        var darkChocholateAmount = parseInt($('#DCValue').val());
-        var totalDarkChocholateProteins = darkChocholateNutritiveValue.proteins * darkChocholateAmount;
     
-        $("#totalProteinsPlate").html(totalDarkChocholateProteins);
+});
 
+$(function() {
 
-        alert(totalDarkChocholateProteins);
-    });
+    $('#sort1').sortable({
+       
+        receive: function(event, ui) {
+            event.preventDefault();
+        },
+        connectWith: ".sortable",
+        appendTo: 'body'
+    }).disableSelection();
+    $('#sort2').sortable({
+     
+        receive: function(event, ui) {
+            
+            event.preventDefault();
+        },
+
+    }).disableSelection();
 
 });
-//________________________________________________________
-
-
-  
-
-
