@@ -1,14 +1,35 @@
 $(document).ready(function(){ 
 
-    function bindDblClick(food){
-       $("#" + food).dblclick(function(){
-            $(this).fadeOut("fast");
-            $(this).clone().appendTo("#plate"); 
+    $(function() {
+
+    $('#sort1').sortable({
+       
+        receive: function(event, ui) {
+            event.preventDefault();
+        },
+        connectWith: ".sortable",
+        appendTo: 'body'
+    }).disableSelection();
+    $('#sort2').sortable({
+     
+        receive: function(event, ui) {
+            
+            event.preventDefault();
+        },
+
+    }).disableSelection();
+    //_____________________________________________________________________________
+function binddblClick(food){
+      $("#" + food).dblclick(function(){           
             $(this).addClass("sub");
             $("#" + food + " div.sub input").removeClass("invisible");
             $("#" + food + " div.sub span").removeClass("invisible");
-         });   
+        });   
     }
+
+    //__________________________________________________________________________
+
+});
 
     function animateContainer(fridge){
             $("#" + fridge).animate({left:"0px"}, 200);
@@ -58,23 +79,4 @@ $(document).ready(function(){
     
 });
 
-$(function() {
 
-    $('#sort1').sortable({
-       
-        receive: function(event, ui) {
-            event.preventDefault();
-        },
-        connectWith: ".sortable",
-        appendTo: 'body'
-    }).disableSelection();
-    $('#sort2').sortable({
-     
-        receive: function(event, ui) {
-            
-            event.preventDefault();
-        },
-
-    }).disableSelection();
-
-});
