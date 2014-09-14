@@ -13,21 +13,16 @@ $(document).ready(function(){
     $('#sort2').sortable({
      
         receive: function(event, ui) {
-            
+            var on_plate = $('#sort2 div div').find('.invisible');
+            $.each(on_plate, function(i, elem){
+                $(elem).removeClass('invisible');
+            });
             event.preventDefault();
         },
 
     }).disableSelection();
     //_____________________________________________________________________________
-function binddblClick(food){
-      $("#" + food).dblclick(function(){           
-            $(this).addClass("sub");
-            $("#" + food + " div.sub input").removeClass("invisible");
-            $("#" + food + " div.sub span").removeClass("invisible");
-        });   
-    }
 
-    //__________________________________________________________________________
 
 });
 
@@ -39,15 +34,12 @@ function binddblClick(food){
 
     $("#sweets").click(function(){
         animateContainer("fridgeSweets");
-        bindDblClick("whiteChocholate");
-        bindDblClick("darkChocholate");
      }); 
     
 //_____________________________________________
 
     $("#fats").click(function(){
         animateContainer("fridgeFats");
-        bindDblClick("butter"); 
     });
 
 //______________________________________________
@@ -78,5 +70,11 @@ function binddblClick(food){
     });
     
 });
+
+//____________________________________________
+
+    $('#calculate_btn').click(function() {
+        // TODO calculate
+    });
 
 
