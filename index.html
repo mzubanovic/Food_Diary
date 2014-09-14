@@ -14,14 +14,15 @@
 	<div id="fridgeSweets" class="menu">
 	<h2 class="h2">Fridge</h2>
 	<ul id = "sort1" class="sortable">
-	    <div id ="darkChocholate" class = "submenu" draggable="true" 
+	    <div id ="darkChocholate" class = "submenu food_item" draggable="true" 
      ondragstart="return dragStart(event)">	 
 	    	<div class="sub">
 	    		<input id="DCValue" class="inputamount invisible" type="number" name="quantity" size="4" min="1" max="500" />
 	    		<span class="invisible">g</span>
-	    </div></div>
+	    	</div>
+	    </div>
 	    
-	    <div id="whiteChocholate" class="submenu">   
+	    <div id="whiteChocholate" class="submenu food_item">   
 	    	<div class="sub">
 	    		<input id="WCValue" class="inputamount invisible" type="number" name="quantity" size="4" min="1" max="500" />
 	    		<span class="invisible">g</span>
@@ -36,7 +37,7 @@
 		<div id="fridgeFats" class="menu">
 	    <h2 class="h2">Fridge</h2>
 	        
-	       <div id ="butter" class = "submenu">   
+	       <div id ="butter" class = "submenu food_item">   
 	       		<div class="sub">
 	       			<input class="inputamount invisible" type="number" name="quantity" size="4"  min="1" max="500">
 	       			<span class="invisible">g</span>
@@ -91,5 +92,6 @@
 	</div>
 	 
     <script src="project.js"></script>
+    <script src="data.js"></script>
 </body>
 </html>

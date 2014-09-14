@@ -74,7 +74,17 @@ $(document).ready(function(){
 //____________________________________________
 
     $('#calculate_btn').click(function() {
-        // TODO calculate
+        var total_proteins = 0;
+        var in_plate = $('#sort2 div.food_item');   //povlači sve divove koje imaju food item (iz html)
+        $.each(in_plate, function(index, value) { // for each, prolazi kroz sve elemente u in_plate 
+            var amount = $(value).find('input.inputamount'); //unutar html, food item-a, traži input field
+            var amount_value = $(amount).val(); 
+            var id = $(value).attr("id"); // traži po id-u
+            var food_id = connect[id]; //povlači informacije iz objekta connect u data.js
+            var current_food = food_data[food_id]; // isto kao i predhodno, samo precizira
+            total_proteins += current_food.proteins * amount_value; 
+            $('#totalProteinsPlate').html(total_proteins); // prikazuje input u html
+        });
     });
 
 
